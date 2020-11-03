@@ -1,0 +1,25 @@
+{
+  "name": "xianxia-title-gen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvilMonark/Xianxia-title-gen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EvilMonark/Xianxia-title-gen/issues"
+  },
+  "homepage": "https://github.com/EvilMonark/Xianxia-title-gen#readme"
+}
