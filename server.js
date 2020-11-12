@@ -2,7 +2,7 @@ const express = require("express");
 const path = require('path');
 const { randomInt } = require("crypto");
 const fs = require('fs');
-
+const PORT = process.env.PORT || "5000";
 
 const server = express();
 var xianxia_title = "";
@@ -51,7 +51,8 @@ server.get('/', (req,res)=>{
 server.use((req,res,next)=>{
     res.status(404).send("Hi, this is not available at the moment!");
 })
-server.listen(6969,'localhost', ()=>{
-    console.log("Served at: http://192.168.0.100:6969 ");
-    console.log("Press Ctrl + C to kill");
-});
+
+server.listen(PORT,()=>{
+    console.log(`Listening on ${PORT}`);
+    console.log("Press Ctrl+C to stop it.");
+})
